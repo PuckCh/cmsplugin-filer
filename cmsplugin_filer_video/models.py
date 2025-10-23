@@ -51,6 +51,7 @@ class FilerVideo(CMSPlugin):
         to=CMSPlugin,
         related_name='%(app_label)s_%(class)s',
         parent_link=True,
+        on_delete=models.DO_NOTHING,
     )
 
     def __str__(self):
