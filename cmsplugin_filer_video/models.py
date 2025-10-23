@@ -6,7 +6,7 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
-from filer.utils.compatibility import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from os.path import basename
 
 

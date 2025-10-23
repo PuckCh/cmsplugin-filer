@@ -9,7 +9,7 @@ from cms.models import CMSPlugin
 from cms.models.fields import PageField
 
 from filer.fields.file import FilerFileField
-from filer.utils.compatibility import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 
 from djangocms_attributes_field.fields import AttributesField
 

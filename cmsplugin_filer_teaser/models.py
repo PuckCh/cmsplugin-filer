@@ -3,7 +3,7 @@ from django.db import models
 from cms.models import CMSPlugin
 from cms.models.fields import PageField
 from filer.fields.image import FilerImageField
-from filer.utils.compatibility import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from .conf import settings
 from cmsplugin_filer_utils import FilerPluginManager
 

@@ -5,7 +5,7 @@ from django.db import models
 from cms.models import CMSPlugin
 from django.utils.translation import gettext_lazy as _
 from filer.fields.folder import FilerFolderField
-from filer.utils.compatibility import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from .conf import settings
 from cmsplugin_filer_utils import FilerPluginManager
 
